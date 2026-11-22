@@ -6,7 +6,7 @@
 <title>NEXUS — produtividade pessoal com IA</title>
 <meta name="description" content="NEXUS organiza tarefas, agenda, projetos, notas, hábitos, estudos, finanças e criação de conteúdo. O NEXUS Premium libera o Assistente de IA e o controle do computador.">
 <meta property="og:title" content="NEXUS — produtividade pessoal com IA">
-<meta property="og:description" content="Sua rotina, finanças e projetos num só app. Premium com Assistente de IA a partir de R$ 4,90 por semana.">
+<meta property="og:description" content="Sua rotina, finanças e projetos num só app. Premium com Assistente de IA a partir de R$ 5,00 por semana.">
 <meta property="og:image" content="icon.png">
 <link rel="icon" href="icon.png">
 <style>
@@ -132,7 +132,7 @@
       <div class="plans">
         <div class="card plan">
           <div class="name">Semanal</div>
-          <div class="price">R$ 4,90</div>
+          <div class="price">R$ 5,00</div>
           <div class="per">por semana</div>
           <div class="note">Para experimentar</div>
           <a class="btn ghost" data-plan="weekly" href="#planos">Assinar semanal</a>
@@ -188,7 +188,11 @@
 
 <script>
   // Links de pagamento da Kiwify (preencher quando os planos estiverem criados).
-  const CHECKOUT = { weekly: "", monthly: "", annual: "" };
+  const CHECKOUT = {
+    weekly: "https://pay.kiwify.com.br/PDp45b3",
+    monthly: "https://pay.kiwify.com.br/vgqqrRS",
+    annual: "https://pay.kiwify.com.br/0bbmx6g",
+  };
   let anyLink = false;
   document.querySelectorAll("[data-plan]").forEach((a) => {
     const url = CHECKOUT[a.dataset.plan];
