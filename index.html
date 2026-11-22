@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NEXUS — produtividade pessoal com IA</title>
+<meta name="description" content="NEXUS organiza tarefas, agenda, projetos, notas, hábitos, estudos, finanças e criação de conteúdo. O NEXUS Premium libera o Assistente de IA e o controle do computador.">
+<meta property="og:title" content="NEXUS — produtividade pessoal com IA">
+<meta property="og:description" content="Sua rotina, finanças e projetos num só app. Premium com Assistente de IA a partir de R$ 4,90 por semana.">
+<meta property="og:image" content="icon.png">
+<link rel="icon" href="icon.png">
+<style>
+  :root {
+    --bg: #06070A; --layer: #0F1116; --layer-2: #161922; --line: #232734;
+    --text: #F2F4F8; --muted: #8B92A3; --accent: #8B9BFF; --accent-2: #47D7C8;
+    --radius: 18px;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  a { color: inherit; }
+  .wrap { max-width: 1080px; margin: 0 auto; padding: 0 16px; }
+  header { padding: 18px 0; }
+  .brand { display: flex; align-items: center; gap: 10px; font-weight: 700; letter-spacing: .08em; }
+  .brand img { width: 34px; height: 34px; border-radius: 9px; }
+  .hero { padding: 56px 0 40px; text-align: center; }
+  .hero img { width: 96px; height: 96px; border-radius: 24px; box-shadow: 0 0 60px #8B9BFF33; }
+  h1 { font-size: clamp(2rem, 6vw, 3.4rem); line-height: 1.1; margin: 24px 0 16px; }
+  h1 span {
+    background: linear-gradient(90deg, var(--accent), var(--accent-2));
+    -webkit-background-clip: text; background-clip: text; color: transparent;
+  }
+  .lead { color: var(--muted); font-size: 1.15rem; max-width: 640px; margin: 0 auto 28px; }
+  .btn {
+    display: inline-block; padding: 14px 26px; border-radius: 999px; font-weight: 600;
+    text-decoration: none; background: var(--accent); color: #06070A; border: 0; cursor: pointer;
+  }
+  .btn.ghost { background: transparent; color: var(--text); border: 1px solid var(--line); }
+  .btn-row { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+  section { padding: 48px 0; }
+  h2 { font-size: clamp(1.5rem, 4vw, 2.1rem); margin: 0 0 8px; text-align: center; }
+  .sub { color: var(--muted); text-align: center; margin: 0 auto 32px; max-width: 620px; }
+  .grid { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
+  .card { background: var(--layer); border: 1px solid var(--line); border-radius: var(--radius); padding: 20px; }
+  .card h3 { margin: 0 0 6px; font-size: 1.05rem; }
+  .card p { margin: 0; color: var(--muted); font-size: .95rem; }
+  .ico { font-size: 1.5rem; margin-bottom: 8px; display: block; }
+  .premium { border-color: #8B9BFF66; background: linear-gradient(160deg, #161a2e, var(--layer)); }
+  .tag {
+    display: inline-block; font-size: .75rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase;
+    color: var(--accent-2); border: 1px solid #47D7C855; border-radius: 999px; padding: 2px 10px; margin-bottom: 10px;
+  }
+  .plans { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); align-items: stretch; }
+  .plan { display: flex; flex-direction: column; text-align: center; padding: 28px 22px; }
+  .plan .name { font-weight: 600; color: var(--muted); }
+  .plan .price { font-size: 2.4rem; font-weight: 800; margin: 8px 0 0; }
+  .plan .per { color: var(--muted); margin-bottom: 18px; }
+  .plan .note { color: var(--accent-2); font-size: .9rem; min-height: 1.5em; margin-bottom: 18px; }
+  .plan .btn { margin-top: auto; }
+  .plan.best { border-color: var(--accent); }
+  .steps { counter-reset: s; display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
+  .steps .card::before {
+    counter-increment: s; content: counter(s); display: inline-grid; place-items: center;
+    width: 32px; height: 32px; border-radius: 50%; background: var(--layer-2); color: var(--accent);
+    font-weight: 700; margin-bottom: 10px;
+  }
+  details { background: var(--layer); border: 1px solid var(--line); border-radius: 14px; padding: 14px 18px; margin-bottom: 10px; }
+  summary { cursor: pointer; font-weight: 600; }
+  details p { color: var(--muted); margin: 10px 0 0; }
+  .faq { max-width: 760px; margin: 0 auto; }
+  footer { border-top: 1px solid var(--line); padding: 28px 0 40px; color: var(--muted); font-size: .9rem; text-align: center; }
+  .soon { color: var(--muted); font-size: .9rem; margin-top: 10px; text-align: center; }
+</style>
+</head>
+<body>
+<header class="wrap">
+  <div class="brand"><img src="icon.png" alt="">NEXUS</div>
+</header>
+
+<main>
+  <div class="wrap hero">
+    <img src="icon.png" alt="Ícone do NEXUS">
+    <h1>Sua vida organizada.<br><span>Com uma IA que trabalha junto.</span></h1>
+    <p class="lead">O NEXUS junta tarefas, agenda, projetos, notas, hábitos, estudos, finanças e criação de conteúdo num só app. No Premium, um Assistente de IA cuida de tudo isso com você.</p>
+    <div class="btn-row">
+      <a class="btn" href="#planos">Ver planos</a>
+      <a class="btn ghost" href="#recursos">Conhecer o app</a>
+    </div>
+  </div>
+
+  <section id="recursos">
+    <div class="wrap">
+      <h2>Tudo num lugar só</h2>
+      <p class="sub">Os recursos abaixo são grátis. Funciona no computador (Windows, macOS, Linux) e no Android.</p>
+      <div class="grid">
+        <div class="card"><span class="ico">✅</span><h3>Tarefas e agenda</h3><p>Prioridades, prazos e um calendário com o que vem pela frente.</p></div>
+        <div class="card"><span class="ico">📁</span><h3>Projetos e notas</h3><p>Projetos com as tarefas de cada um e notas rápidas para não perder nenhuma ideia.</p></div>
+        <div class="card"><span class="ico">🔁</span><h3>Hábitos e estudos</h3><p>Check-in de hábitos com sequência de dias, matérias e sessões de estudo.</p></div>
+        <div class="card"><span class="ico">💰</span><h3>Finanças</h3><p>Receitas, despesas e o saldo do mês.</p></div>
+        <div class="card"><span class="ico">🎬</span><h3>Criação de conteúdo</h3><p>Ideias e roteiros de conteúdo, do rascunho até a publicação.</p></div>
+        <div class="card"><span class="ico">📈</span><h3>Estatísticas</h3><p>Gráficos que mostram sua evolução ao longo do tempo.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2>NEXUS Premium</h2>
+      <p class="sub">Dois recursos a mais, para quem quer ir além.</p>
+      <div class="grid">
+        <div class="card premium">
+          <span class="tag">Premium</span>
+          <h3>✨ Assistente de IA</h3>
+          <p>Converse com a IA dentro do NEXUS: ela consulta sua agenda, tarefas, projetos, finanças e notas, sugere tarefas novas (que você aprova) e responde dúvidas com base nos seus dados. Funciona com Claude, ChatGPT, Gemini e outros.</p>
+        </div>
+        <div class="card premium">
+          <span class="tag">Premium · Computador</span>
+          <h3>🖥️ Controle do computador</h3>
+          <p>A IA pode abrir programas, encontrar arquivos, criar pastas, clicar e digitar por você. Cada ação só acontece depois que você aprova, e nada é apagado.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="planos">
+    <div class="wrap">
+      <h2>Planos</h2>
+      <p class="sub">3 dias grátis para testar o Premium no app, sem cartão. Pague com Pix ou cartão e cancele quando quiser.</p>
+      <div class="plans">
+        <div class="card plan">
+          <div class="name">Semanal</div>
+          <div class="price">R$ 4,90</div>
+          <div class="per">por semana</div>
+          <div class="note">Para experimentar</div>
+          <a class="btn ghost" data-plan="weekly" href="#planos">Assinar semanal</a>
+        </div>
+        <div class="card plan">
+          <div class="name">Mensal</div>
+          <div class="price">R$ 14,90</div>
+          <div class="per">por mês</div>
+          <div class="note">O mais flexível</div>
+          <a class="btn ghost" data-plan="monthly" href="#planos">Assinar mensal</a>
+        </div>
+        <div class="card plan best">
+          <div class="name">Anual</div>
+          <div class="price">R$ 119</div>
+          <div class="per">por ano · menos de R$ 10 por mês</div>
+          <div class="note">Economize 33%</div>
+          <a class="btn" data-plan="annual" href="#planos">Assinar anual</a>
+        </div>
+      </div>
+      <p class="soon" id="soon">Os pagamentos estão sendo ativados. Volte em breve.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2>Como funciona</h2>
+      <p class="sub">Sem códigos de ativação: o e-mail da compra libera o acesso.</p>
+      <div class="steps">
+        <div class="card"><h3>Crie sua conta</h3><p>Abra o NEXUS e crie uma conta com e-mail e senha.</p></div>
+        <div class="card"><h3>Assine</h3><p>Escolha um plano e pague com o <strong>mesmo e-mail</strong> da sua conta.</p></div>
+        <div class="card"><h3>Pronto</h3><p>Em instantes o Premium aparece liberado no app.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap faq">
+      <h2>Perguntas frequentes</h2>
+      <p class="sub"></p>
+      <details><summary>O NEXUS é grátis?</summary><p>Sim. Tarefas, agenda, projetos, notas, hábitos, estudos, finanças, conteúdo e estatísticas são grátis. A assinatura libera só o Assistente de IA e o controle do computador.</p></details>
+      <details><summary>Como cancelo?</summary><p>Pela área do cliente da Kiwify, a plataforma de pagamento, a qualquer momento. O Premium continua liberado até o fim do período que você já pagou.</p></details>
+      <details><summary>Preciso de uma chave de IA?</summary><p>Sim. O assistente usa a sua chave do provedor que você preferir (Claude, ChatGPT, Gemini ou compatível com OpenAI). A chave fica guardada no cofre do seu aparelho.</p></details>
+      <details><summary>O controle do computador funciona no celular?</summary><p>Não. Ele existe só nas versões para computador. No celular, o Premium libera o Assistente de IA.</p></details>
+      <details><summary>Meus dados ficam onde?</summary><p>Tarefas, notas, finanças e o resto ficam salvos no seu próprio aparelho. Na nuvem fica só a sua conta e a situação da assinatura.</p></details>
+      <details><summary>Paguei e o Premium não apareceu.</summary><p>Confira se usou na compra o mesmo e-mail da conta do NEXUS. Depois, em Conta, toque em "Atualizar".</p></details>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">© 2026 NEXUS · Pagamentos processados pela Kiwify.</div>
+</footer>
+
+<script>
+  // Links de pagamento da Kiwify (preencher quando os planos estiverem criados).
+  const CHECKOUT = { weekly: "", monthly: "", annual: "" };
+  let anyLink = false;
+  document.querySelectorAll("[data-plan]").forEach((a) => {
+    const url = CHECKOUT[a.dataset.plan];
+    if (url) { a.href = url; a.target = "_blank"; a.rel = "noopener"; anyLink = true; }
+  });
+  if (anyLink) document.getElementById("soon").remove();
+</script>
+</body>
+</html>
